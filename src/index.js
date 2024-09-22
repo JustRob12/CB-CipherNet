@@ -1,14 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ComingSoon from './ComingSoon';
-import * as serviceWorker from './service-worker'; // Adjust if using service workers
+import App from './App'; // Your main component
+import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
     <React.StrictMode>
-        <ComingSoon />
+        <App />
     </React.StrictMode>,
     document.getElementById('root')
 );
 
-// Register the service worker (if needed)
 serviceWorker.register();
